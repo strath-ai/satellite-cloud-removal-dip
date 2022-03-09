@@ -2,13 +2,14 @@
 
 Official code for the paper (DOI and official links will be posted soon):
 ```
-@Article{rs14051120,
+@article{rs14051120,
 author = {Czerkawski, Mikolaj and Upadhyay, Priti and Davison, Christopher and Werkmeister, Astrid and Cardona, Javier and Atkinson, Robert and Michie, Craig and Andonovic, Ivan and Macdonald, Malcolm and Tachtatzis, Christos},
 title = {Deep Internal Learning for Inpainting of Cloud-Affected Regions in Satellite Imagery},
 journal = {Remote Sensing},
 year = {2022}
 }
 ```
+Please cite accordingly if any part of the repository is used.
 
 ## :cloud: Removing clouds with Deep Image Prior
 [Deep Image Prior](https://dmitryulyanov.github.io/deep_image_prior) can be used for inpainting image areas in an internal fashion, without requiring anything other than the image itself and **the mask of the inpainted region**.
@@ -17,7 +18,7 @@ Furthermore, you can easily use any other collocated sources of information, lik
 
 ![Example Result](example_result.png?raw=true "Title")
 
-## :computer: Implmentation
+## :computer: Implementation
 This is all you need to do to set up the model:
 ```python
 my_model = LitDIP()
@@ -50,6 +51,16 @@ result, _, _ = my_model.output()
 ```
 The `.output()` method returns all reconstructed sources, so pay attention to the order. In this case, `s2_image` was the first target out of three images supplied to `.set_target()`, so result is the first out of three returned arrays.
 
+## :wrench: Data format
+So, what is the required data format? The nice feature of a DIP-based solution is that you're free to use almost any format and scaling of your data.
+
+### Image Shape
+It's fully convolutional so it will for for many spatial dimensions. Some shapes may be more problematic due to downsampling-upsampling inconsistencies, and generally, shape sizes based on powers of 2 work best. In the example, we use a size of 256x256.
+
+### Value scaling
+Any value range is fine. By default, `sigmoid_output = True` for `LitDIP()`, so you want to change it to `False` if the network has to produce values outside of `[0,1]`.
+
+
 ## :clipboard: Requirements
 These are the crucial packages for the project:
 ```bash
@@ -58,3 +69,5 @@ torch==1.8.1
 numpy=1.19.2
 rasterio=1.0.21
 ```
+
+> Please feel free to post any issues via GitHub, or pass them directly to mikolaj.czerkawski@strath.ac.uk
