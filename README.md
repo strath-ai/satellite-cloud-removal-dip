@@ -2,11 +2,17 @@
 
 Official code for the paper (DOI and official links will be posted soon):
 ```
-@article{rs14051120,
+@article{rs14061342,
 author = {Czerkawski, Mikolaj and Upadhyay, Priti and Davison, Christopher and Werkmeister, Astrid and Cardona, Javier and Atkinson, Robert and Michie, Craig and Andonovic, Ivan and Macdonald, Malcolm and Tachtatzis, Christos},
 title = {Deep Internal Learning for Inpainting of Cloud-Affected Regions in Satellite Imagery},
 journal = {Remote Sensing},
-year = {2022}
+volume = {14},
+year = {2022},
+number = {6},
+article-number = {1342},
+url = {https://www.mdpi.com/2072-4292/14/6/1342},
+ISSN = {2072-4292},
+DOI = {10.3390/rs14061342}
 }
 ```
 Please cite accordingly if any part of the repository is used.
@@ -60,6 +66,11 @@ It's fully convolutional so it will for for many spatial dimensions. Some shapes
 ### Value scaling
 Any value range is fine. By default, `sigmoid_output = True` for `LitDIP()`, so you want to change it to `False` if the network has to produce values outside of `[0,1]`.
 
+## :open_file_folder: Supporting Dataset
+The dataset used in the experiments presented in the manuscript can be found here:
+https://doi.org/10.5281/zenodo.5897695
+
+It contains two years of coverage (2019 and 2020) for two distant geographical areas in India and in Scotland.
 
 ## :clipboard: Requirements
 These are the crucial packages for the project:
