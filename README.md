@@ -1,4 +1,5 @@
 # satellite-cloud-removal-dip
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cidcom/satellite-cloud-removal-dip/blob/main/01-Example-Use-colab.ipynb) [![DOI:10.1007/978-3-319-76207-4_15](https://zenodo.org/badge/DOI/10.3390/rs14061342.svg)](https://doi.org/10.3390/rs14061342)
 
 Official code for the paper (DOI and official links will be posted soon):
 ```
@@ -67,6 +68,8 @@ It's fully convolutional so it will for for many spatial dimensions. Some shapes
 Any value range is fine. By default, `sigmoid_output = True` for `LitDIP()`, so you want to change it to `False` if the network has to produce values outside of `[0,1]`.
 
 ## :open_file_folder: Supporting Dataset
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5897695.svg)](https://doi.org/10.5281/zenodo.5897695)
+
 The dataset used in the experiments presented in the manuscript can be found here:
 https://doi.org/10.5281/zenodo.5897695
 
