@@ -70,6 +70,10 @@ Any value range is fine. By default, `sigmoid_output = True` for `LitDIP()`, so 
 ## :open_file_folder: Supporting Dataset
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5897695.svg)](https://doi.org/10.5281/zenodo.5897695)
 
+You can download directly using
+```bash
+wget https://zenodo.org/record/5897695/files/dataset-for-zenodo.zip
+```
 The dataset used in the experiments presented in the manuscript can be found here:
 https://doi.org/10.5281/zenodo.5897695
 
