@@ -68,14 +68,14 @@ It's fully convolutional so it will for for many spatial dimensions. Some shapes
 Any value range is fine. By default, `sigmoid_output = True` for `LitDIP()`, so you want to change it to `False` if the network has to produce values outside of `[0,1]`.
 
 ## :open_file_folder: Supporting Dataset
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5897695.svg)](https://doi.org/10.5281/zenodo.5897695)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5897694.svg)](https://doi.org/10.5281/zenodo.5897694)
 
 You can download directly using
 ```bash
-wget https://zenodo.org/record/5897695/files/dataset-for-zenodo.zip
+wget https://zenodo.org/record/5897694/files/dataset-for-zenodo.zip
 ```
 The dataset used in the experiments presented in the manuscript can be found here:
-https://doi.org/10.5281/zenodo.5897695
+https://doi.org/10.5281/zenodo.5897694
 
 It contains two years of coverage (2019 and 2020) for two distant geographical areas in India and in Scotland.
 
