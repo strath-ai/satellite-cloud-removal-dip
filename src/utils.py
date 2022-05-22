@@ -1,5 +1,6 @@
 import rasterio as rio
 import numpy as np
+from skimage.metrics import structural_similarity as ssim
 
 def rgb(image):
     if image.shape[-1] > 12:
@@ -40,3 +41,10 @@ def s1_preprocess(path, max_val = 2.0, to_db = False):
     s1dB[...,1] = max_val*(s1dB[...,1].clip(-32.5, 0) + 32.5) / 32.5  
 
     return s1dB
+
+def masked_ssim(im1, im2):
+    # SSIM masking added for reference
+    
+    ssim_val, ssim_img = ssim(im1, im2, multichannel = True, full = True)
+    return ssim_img[mask == mask.min()].mean()
+    
