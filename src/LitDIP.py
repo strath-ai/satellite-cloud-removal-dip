@@ -176,7 +176,7 @@ class LitDIP(pl.LightningModule):
         
         return {'loss': loss.mean()}
     
-    def on_pretrain_routine_end(self):
+    def on_fit_start(self):
         self.input = self.input.to(self.device)
         self.target = self.target.to(self.device)
 
