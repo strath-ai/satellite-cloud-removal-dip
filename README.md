@@ -1,7 +1,7 @@
 # satellite-cloud-removal-dip
-[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cidcom/satellite-cloud-removal-dip/blob/main/01-Example-Use-colab.ipynb) [![DOI:10.1007/978-3-319-76207-4_15](https://zenodo.org/badge/DOI/10.3390/rs14061342.svg)](https://doi.org/10.3390/rs14061342)
+[![MDPI](https://img.shields.io/badge/Open_Access-MDPI-green)](https://www.mdpi.com/2072-4292/14/6/1342) [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cidcom/satellite-cloud-removal-dip/blob/main/01-Example-Use-colab.ipynb) [![DOI:10.1007/978-3-319-76207-4_15](https://zenodo.org/badge/DOI/10.3390/rs14061342.svg)](https://doi.org/10.3390/rs14061342)
 
-Official code for the paper (DOI and official links will be posted soon):
+Official code for the paper (access at https://www.mdpi.com/2072-4292/14/6/1342):
 ```bibtex
 @article{rs14061342,
 author = {Czerkawski, Mikolaj and Upadhyay, Priti and Davison, Christopher and Werkmeister, Astrid and Cardona, Javier and Atkinson, Robert and Michie, Craig and Andonovic, Ivan and Macdonald, Malcolm and Tachtatzis, Christos},
