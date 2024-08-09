@@ -152,7 +152,7 @@ class LitDIP(pl.LightningModule):
     def forward(self, input):
         return self.model.forward(input)
             
-    def validation_epoch_end(self, outputs):
+    def on_validation_epoch_end(self, outputs):
         if self.logging:
             avg_loss = np.mean([x['val_loss'] for x in outputs])
 
